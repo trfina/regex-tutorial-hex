@@ -33,7 +33,8 @@ This tutorial describes how to match a hex value using Regex, as follows:
 
 Matching a Hex Value – /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
-### Anchors - ^ and $
+### Anchors 
+^ and $
 
 Anchors define where the search parameters begin and end while parsing through a string of data.
 
@@ -41,25 +42,31 @@ In the hex value example:
 
 `^` indicates to search for the `#` character.  If found, a search for the string `([a-f0-9]{6}|[a-f0-9]{3})` is initiated as defined by the `$` anchor.
 
-
-
-
-
+Another example:
 
 
 ### Quantifiers
+* + ? and {}
+
 Quantifiers match a number of instances of a character, group, or character class in a string.
+
 ### OR Operator
+| or []
 
 ### Character Classes
+\d \w \s and .
 
 ### Flags
 
 ### Grouping and Capturing
 
 ### Bracket Expressions
+[]
 
 ### Greedy and Lazy Match
+ Greedy operators expand a match with all charaters in the search critera.
+
+ Lazy matches optional characters.
 
 ### Boundaries
 
@@ -69,7 +76,9 @@ Quantifiers match a number of instances of a character, group, or character clas
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Tammy Fina referencing the follow resources:
 
 citation for uses of regex:
 https://www.analyticsvidhya.com/blog/2020/01/4-applications-of-regular-expressions-that-every-data-scientist-should-know-with-python-code/
+
+
