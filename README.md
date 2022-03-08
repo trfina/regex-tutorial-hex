@@ -2,7 +2,7 @@
 
 Regular expressions (Regex) are used by Data Scientists and other IT professionals to extract and process data into data sets that meet certain criteria.
 
-Web scraping, search and replace, and pattern matching are but a few of the many tasks that can be accomplished with Regex.
+Web scraping, search and replace, and pattern matching are but a few of the many tasks that can be accomplished with regular expressions.
 
 ## <b>Summary</b>
 
@@ -20,6 +20,7 @@ For Example:
 * #0d98ba is a medium shade of dark cyan
 
 (insert references for Understanding Hex Color codes)
+
 
 ## Table of Contents
 
@@ -53,6 +54,7 @@ Additional examples:
 - `^abc` will search for string or line that begins with `abc`
 - `abc$` will search for a string or line that ends with `abc`
 
+
 ## Quantifiers
 ### MChars  *, +, ?, and {}
 
@@ -67,8 +69,7 @@ The hex color regex `/^#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})$/` uses  `?`, `{6}` and
 
 - `#?` matches a hex color code for 0 or 1 of an instance of the `#` character.  This means that all hex codes are considered a match whether it has the `#` preceding the color code or not.
 
-        *All color codes used in style sheets have the `#` preceeding the color code, right?*  
-        *Why would it be excluded?*  
+        *All color codes used in style sheets have the `#` preceeding the color code, right?  Why would it be excluded?*  
         *One explanation is that in order to save storage space the `#` symbol is excluded from a hex color code in databases when one color schema is converted to another.*
 
 - `{6}` quantifies that up to six characters in the explicit set [a-zA-Z0-9] can be matched.  `{3}` quantifies up to three characters of [a-zA-Z0-9] to be matched.
@@ -80,6 +81,7 @@ Additional examples:
 - `xyz{2,10}` matches a string that has `xy` followed by 2 up to 10 `z` characters
 
 (add referencesregexlib.com  - Regular Expression Cheat Sheet)
+
 
 ## OR Operator
 ### MChars | or []
@@ -93,10 +95,21 @@ Additional examples:
 - `soup|salad` returns true for either `soup` or `salad`
 - `a[bc]d` returns true for either `abd` or `acd`
 
-## Character Classes
-\d \w \s and .
 
-## Grouping and Capturing
+## Character Classes
+### \d, \w, \s, [0-9a-fA-F], `[abc]` 
+
+#### Character classes allow you to match a set of characters including digits, whitespace and a range of characters.
+
+- `[0-9a-fA-F]` is used in the hex color code regex and will match a range of characters by using a hyphen.  This example will match digits 0-9, and a-f, lower and upper case.
+- `\d` matches any decimal digit, whereas `\D` matches any nondigit
+- `\w` matches any work character, `\W` for any nonword character
+- `\s` matches any white-space character, `\S` any non-white-space character
+
+Additional examples:
+- `[a-z&&[^aeiou]]` matched a single letter that is not a vowell
+- `[abc]` matches `a`, `b` or `c`
+
 
 ## Bracket Expressions
 ### MChar []
@@ -111,19 +124,29 @@ Additional examples:
 
 
 ## Greedy and Lazy Match
- Greedy operators expand a match with all charaters in the search critera.
 
- Lazy matches optional characters.
+ Greedy operators expand a match with all characters in the search critera.  Therefore, it finds the longest match. 
 
-### Boundaries
+ - `#09AF6B` (Jade) -  In the hex color code example, the longest match would be the expanded 6 character hex color code with the `#` symbol.
 
-### Back-references
+ Lazy matches optional characters.  Therefore, it finds the smallest possible string.
 
-### Look-ahead and Look-behind
+ - `3C9` (Crayoly Shamrock) - The smallest possible string would be a hex-triplet, or a shorthand version of the expanded 6 character hex code without the `#`.
+
 
 ### Author
+  
+- [GitHub Profile](https://github.com/trfina)
+- Additional Questions?  Contact me at finatammy@gmail.com
 
-This tutorial was created by Tammy Fina referencing the follow resources:
+### Resources
 
-citation for uses of regex:
-https://www.analyticsvidhya.com/blog/2020/01/4-applications-of-regular-expressions-that-every-data-scientist-should-know-with-python-code/
+* [Understand Hex Color Codes](https://www.codeconquest.com/hex-color-codes/)
+
+* [Applications of Regular Expressions](https://www.analyticsvidhya.com/blog/2020/01/4-applications-of-regular-expressions-that-every-data-scientist-should-know-with-python-code/)
+
+* [Regex Character Classes](https://www.regular-expressions.info/refcharclass.html)
+
+* [Regex Simplified by Jonny Fox](https://ionlake.zendesk.com/hc/en-us/articles/360031442771-Regex-Simplified-by-Jonny-Fox)
+
+This README was generated with ❤️ by Tammy Fina © 2022
