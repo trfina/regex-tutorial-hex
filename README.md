@@ -95,7 +95,7 @@ Additional examples:
 
 - `[0-9a-fA-F]` is used in the hex color code regex and will match a range of characters by using a hyphen.  This example will match digits 0-9, and a-f, lower and upper case.
 - `\d` matches any decimal digit, whereas `\D` matches any nondigit
-- `\w` matches any work character, `\W` for any nonword character
+- `\w` matches any word character, `\W` for any nonword character
 - `\s` matches any white-space character, `\S` any non-white-space character
 
 Additional examples:
