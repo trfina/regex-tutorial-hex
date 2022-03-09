@@ -99,7 +99,7 @@ Additional examples:
 - `\s` matches any white-space character, `\S` any non-white-space character
 
 Additional examples:
-- `[a-z&&[^aeiou]]` matched a single letter that is not a vowell
+- `[a-z&&[^aeiou]]` matches a single letter that is not a vowel
 - `[abc]` matches `a`, `b` or `c`
 
 
