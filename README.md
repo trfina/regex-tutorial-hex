@@ -106,7 +106,7 @@ Additional examples:
 ## Bracket Expressions
 ### MChar []
 
-#### Individual characters between the brackets will match as will a set of characters
+#### Individual characters between the brackets will be matched as well as a set of characters
 
 - The snipet `[a-fA-Z0-9]` from the hex color code will match characters from the sets `a-f`, `A-F` or `0-9`.  Other quantifiers can be applied to the brackets in the regex as well.
 
