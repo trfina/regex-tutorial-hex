@@ -8,7 +8,7 @@ Web scraping, search and replace, and pattern matching are but a few of the many
 
 This tutorial describes how to match a <b>hex color code value</b> using Regex:
 
-> /^#?([a-f0-9]{6}|[a-f0-9|{3})$/
+> `/^#?([a-f0-9]{6}|[a-f0-9|{3})$/`
 
 Hexidecimal Color Values (Hex Codes) are primarily used in style sheets to represent color values for a computer screen.  A hex color code begins with `#`, followed by three sets of two-digit numbers, i.e. (#01ff04). Each set of hexidecimal numbers represents the colors red, green and blue, respectivly.  A hex color can also be represented by 3 characters (shorthand or hex-triplet), if each set of the two-digits numbers use the same character.
 
@@ -40,7 +40,7 @@ For Example:
 
 #### Anchors define where the search parameters begin and end while parsing through a string of data.
 
-In the hex color value regex **^**#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})**$**:
+In the hex color value regex **`^`**`#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})`**`$`**:
 
 - `^` indicates the beginning of the search string
 - `$` indicates the end of the search string
