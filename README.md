@@ -19,8 +19,6 @@ For Example:
 * #FFF is the shorthand/hex-triplet representation of white.
 * #0d98ba is a medium shade of dark cyan
 
-(insert references for Understanding Hex Color codes)
-
 
 ## Table of Contents
 
@@ -75,8 +73,6 @@ Additional examples:
 - `xyz+` matches a string that has `xy` followed by 1 or more `z` characters
 - `xyz{3}` expects the string  `xy` followed by 3 `z` characters
 - `xyz{2,10}` matches a string that has `xy` followed by 2 up to 10 `z` characters
-
-(add referencesregexlib.com  - Regular Expression Cheat Sheet)
 
 
 ## OR Operator
