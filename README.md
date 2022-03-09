@@ -129,12 +129,7 @@ Additional examples:
  - `3C9` (Crayoly Shamrock) - The smallest possible string would be a hex-triplet, or a shorthand version of the expanded 6 character hex code without the `#`.
 
 
-### Author
-  
-- [GitHub Profile](https://github.com/trfina)
-- Additional Questions?  Contact me at finatammy@gmail.com
-
-### Resources
+## Resources
 
 * [Understand Hex Color Codes](https://www.codeconquest.com/hex-color-codes/)
 
@@ -142,6 +137,12 @@ Additional examples:
 
 * [Regex Character Classes](https://www.regular-expressions.info/refcharclass.html)
 
-* [Regex Simplified by Jonny Fox](https://ionlake.zendesk.com/hc/en-us/articles/360031442771-Regex-Simplified-by-Jonny-Fox)
+* [Regex Simplified](https://ionlake.zendesk.com/hc/en-us/articles/360031442771-Regex-Simplified-by-Jonny-Fox)
+
+
+### Author
+  
+- [GitHub Profile](https://github.com/trfina)
+- Additional Questions?  Contact me at finatammy@gmail.com
 
 This README was generated with ❤️ by Tammy Fina © 2022
