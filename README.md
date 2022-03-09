@@ -33,7 +33,8 @@ For Example:
 
 # Regex Components
 
-## Matching the Hex Color Code Value `/^#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})$/`
+## Matching the Hex Color Code Value 
+`/^#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})$/`
 
 ## Anchors 
 ### MChars ^ and $
