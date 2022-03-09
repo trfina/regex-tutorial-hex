@@ -10,7 +10,7 @@ This tutorial describes how to match a <b>hex color code value</b> using Regex:
 
 > `/^#?([a-f0-9]{6}|[a-f0-9|{3})$/`
 
-Hexidecimal Color Values (Hex Codes) are primarily used in style sheets to represent color values for a computer screen.  A hex color code begins with `#`, followed by three sets of two-digit numbers, i.e. (#01ff04). Each set of hexidecimal numbers represents the colors red, green and blue, respectivly.  A hex color can also be represented by 3 characters (shorthand or hex-triplet), if each set of the two-digits numbers use the same character.
+Hexidecimal Color Values (Hex Codes) are primarily used in style sheets to represent color values for a computer screen.  A hex color code begins with `#`, followed by three sets of two-digit hex numbers, i.e. (#01ff04). Each set of hexidecimal numbers represents the colors red, green and blue, respectively.  A hex color can also be represented by 3 characters (shorthand or hex-triplet), if each set of the two-digit hex numbers use the same characters.
 
 For Example:
 * #000000 represents no red, no green and no blue, which equates to black in the color spectrum.
