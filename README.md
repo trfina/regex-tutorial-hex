@@ -126,7 +126,7 @@ Additional examples:
 
  Lazy matches optional characters.  Therefore, it finds the smallest possible string.
 
- - `3C9` (Crayoly Shamrock) - The smallest possible string would be a hex-triplet, or a shorthand version of the expanded 6 character hex code without the `#`.
+ - `3C9` (Crayola Shamrock) - The smallest possible string would be a hex-triplet, or a shorthand version of the expanded 6 character hex code without the `#`.
 
 
 ## Resources
