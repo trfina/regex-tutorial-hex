@@ -63,8 +63,8 @@ The hex color regex `/^#?([a-fA-Z0-9]{6}|[a-fA-Z0-9]{3})$/` uses  `?`, `{6}` and
 
 - `#?` matches a hex color code for 0 or 1 of an instance of the `#` character.  This means that all hex codes are considered a match whether it has the `#` preceding the color code or not.
 
->>All color codes used in style sheets have the `#` preceeding the color code, right?  Why would it be excluded?
->>One explanation is that in order to save storage space the `#` symbol is excluded from a hex color code in databases when one color schema is converted to another.
+>All color codes used in style sheets have the `#` preceeding the color code, right?  Why would it be excluded?
+>One explanation is that in order to save storage space the `#` symbol is excluded from a hex color code in databases when one color schema is converted to another.
 
 - `{6}` quantifies that up to six characters in the explicit set [a-zA-Z0-9] can be matched.  `{3}` quantifies up to three characters of [a-zA-Z0-9] to be matched.
 
